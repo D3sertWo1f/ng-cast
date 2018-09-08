@@ -28,14 +28,14 @@ describe('video player', function() {
   }));
 
   it('should correctly set video property on isolate scope', function() {
-    expect(catElement.isolateScope().$ctrl.video.snippet.title).to.equal(fakeVideoData[0].snippet.title);
-    expect(jsElement.isolateScope().$ctrl.video.snippet.title).to.equal(moreFakeVideoData[0].snippet.title);
+    expect(catElement.isolateScope().ctrl.video.snippet.title).to.equal(fakeVideoData[0].snippet.title);
+    expect(jsElement.isolateScope().ctrl.video.snippet.title).to.equal(moreFakeVideoData[0].snippet.title);
 
-    expect(catElement.isolateScope().$ctrl.video.snippet.description).to.equal(fakeVideoData[0].snippet.description);
-    expect(jsElement.isolateScope().$ctrl.video.snippet.description).to.equal(moreFakeVideoData[0].snippet.description);
+    expect(catElement.isolateScope().ctrl.video.snippet.description).to.equal(fakeVideoData[0].snippet.description);
+    expect(jsElement.isolateScope().ctrl.video.snippet.description).to.equal(moreFakeVideoData[0].snippet.description);
 
-    expect(catElement.isolateScope().$ctrl.video.id.videoId).to.equal(fakeVideoData[0].id.videoId);
-    expect(jsElement.isolateScope().$ctrl.video.id.videoId).to.equal(moreFakeVideoData[0].id.videoId);
+    expect(catElement.isolateScope().ctrl.video.id.videoId).to.equal(fakeVideoData[0].id.videoId);
+    expect(jsElement.isolateScope().ctrl.video.id.videoId).to.equal(moreFakeVideoData[0].id.videoId);
   });
 
   it('should dynamically display the video title', function() {

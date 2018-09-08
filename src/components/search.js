@@ -1,5 +1,8 @@
 angular.module('video-player')
 
-.component('search', {
-  // TODO
+.directive('search', function() {
+  return {
+    // TODO
+    templateUrl: 'src/templates/search.html'
+  };
 });

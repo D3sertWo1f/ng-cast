@@ -1,5 +1,8 @@
 angular.module('video-player')
 
-.component('app', {
-  // TODO
+.directive('app', function() {
+  return {
+    // TODO
+    templateUrl: 'src/templates/app.html'
+  };
 });

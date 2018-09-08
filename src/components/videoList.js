@@ -1,4 +1,7 @@
 angular.module('video-player')
-.component('videoList', {
-  // TODO
+.directive('videoList', function() {
+  return {
+    // TODO
+    templateUrl: 'src/templates/videoList.html'
+  };
 });
